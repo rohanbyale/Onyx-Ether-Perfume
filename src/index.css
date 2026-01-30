@@ -1,0 +1,19 @@
+@import "tailwindcss";
+html {
+  /* Native smooth scrolling for anchor links */
+  scroll-behavior: smooth;
+}
+
+/* Optional: Improves the feel of the scrollbar to match Onyx aesthetic */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030610;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0052FF;
+  border-radius: 10px;
+}
