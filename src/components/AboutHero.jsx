@@ -61,7 +61,7 @@ const NexusHero = () => {
             playsInline
             className="w-full h-full object-cover scale-110" // REMOVED: grayscale and contrast-125
           >
-            <source src="/public/68f24fff-7b1f-40ca-b57f-c3f0ed0b2c08.mp4" type="video/mp4" />
+            <source src="/first.mp4" type="video/mp4" />
           </video>
 
           {/* Initial Logo Reveal */}
@@ -117,5 +117,6 @@ const NexusHero = () => {
     </section>
   );
 };
+
 
 export default NexusHero;
