@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
+
 const ingredients = [
   {
     name: "Midnight Rose",
@@ -139,49 +140,50 @@ const IngredientsExperience = () => {
           />
         ))}
 
-        {/* FINAL FOOTER WITH VIDEO BG */}
+        {/* FINAL FOOTER WITH REFINED VIDEO VISIBILITY */}
         <div 
           style={{ zIndex: ingredients.length + 1 }}
           className="relative h-screen sticky top-0 flex items-center justify-center overflow-hidden bg-[#030610] shadow-[0_-50px_100px_rgba(0,0,0,1)] px-6"
         >
-          {/* VIDEO BACKGROUND */}
+          {/* VIDEO BACKGROUND - ENHANCED VISIBILITY */}
           <div className="absolute inset-0 w-full h-full pointer-events-none">
             <video
               autoPlay
               loop
               muted
               playsInline
-              className="w-full h-full object-cover opacity-40 grayscale brightness-50"
+              className="w-full h-full object-cover opacity-70 grayscale-[0.3] brightness-75 transition-all duration-1000"
             >
               <source 
                 src="https://www.pexels.com/download/video/4154241/" 
                 type="video/mp4" 
               />
             </video>
-            <div className="absolute inset-0 bg-[#030610]/60" />
+            {/* Subtle Gradient Overlay to maintain text legibility */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#030610]/80 via-[#030610]/20 to-[#030610]/80" />
           </div>
 
           {/* CONTENT */}
-       <div className="relative z-10 text-center space-y-6 md:space-y-8">
-  <motion.p 
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    className="text-white/20 font-mono text-[10px] md:text-xs uppercase tracking-[0.6em] md:tracking-[1em]"
-  >
-    Analysis_Complete
-  </motion.p>
-  
-  <Link to="/contact" className="inline-block">
-    <motion.button 
-      whileHover={{ scale: 1.05, letterSpacing: "0.3em" }}
-      whileTap={{ scale: 0.95 }}
-      className="px-8 md:px-12 py-3 border border-white/10 text-white text-[10px] md:text-xs font-mono tracking-widest hover:bg-white hover:text-black transition-all duration-700 uppercase rounded-sm bg-black/20 backdrop-blur-sm"
-    >
-      Order Archive
-    </motion.button>
-  </Link>
-</div>
+          <div className="relative z-10 text-center space-y-6 md:space-y-8">
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="text-white/40 font-mono text-[10px] md:text-xs uppercase tracking-[0.6em] md:tracking-[1em]"
+            >
+              Analysis_Complete
+            </motion.p>
+            
+            <Link to="/contact" className="inline-block">
+              <motion.button 
+                whileHover={{ scale: 1.05, letterSpacing: "0.3em", backgroundColor: "rgba(255,255,255,1)", color: "#000" }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 md:px-12 py-3 border border-white/20 text-white text-[10px] md:text-xs font-mono tracking-widest transition-all duration-700 uppercase rounded-sm bg-black/40 backdrop-blur-md"
+              >
+                Order Archive
+              </motion.button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
