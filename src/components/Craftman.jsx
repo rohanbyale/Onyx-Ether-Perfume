@@ -48,7 +48,7 @@ const CraftsmanshipStory = () => {
               autoPlay loop muted playsInline
               className="w-full h-full object-cover"
             >
-              <source src="/second.mp4" type="video/mp4" />
+              <source src="/video.mp4" type="video/mp4" />
             </video>
           </motion.div>
           {/* Sapphire Overlay Wash */}
@@ -131,3 +131,4 @@ const CraftsmanshipStory = () => {
 
 
 export default CraftsmanshipStory;
+
