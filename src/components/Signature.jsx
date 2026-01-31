@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const scents = [
   {
@@ -30,89 +29,72 @@ const scents = [
 
 const SignatureScents = () => {
   return (
-    <section className="relative min-h-screen bg-[#0A0F1E] py-24 flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative min-h-screen bg-[#0A0F1E] py-16 md:py-24 flex flex-col justify-center items-center overflow-hidden">
       
-      {/* 1. STATIC BACKGROUND HEADER */}
-      <div className="absolute top-20 left-0 w-full flex justify-center opacity-[0.03] select-none pointer-events-none">
-        <h2 className="text-[18vw] font-serif text-[#F9FAFB] whitespace-nowrap leading-none uppercase font-black italic">
+      {/* Static Background Text */}
+      <div className="absolute top-20 left-0 w-full flex justify-center opacity-[0.02] select-none pointer-events-none">
+        <h2 className="text-[22vw] md:text-[18vw] font-serif text-[#F9FAFB] whitespace-nowrap leading-none uppercase font-black italic">
           Signatures
         </h2>
       </div>
 
-      {/* 2. AMBIENT SAPPHIRE LIGHTING */}
-      <motion.div 
-        animate={{ 
-          opacity: [0.1, 0.2, 0.1],
-          scale: [1, 1.1, 1] 
-        }}
-        transition={{ duration: 8, repeat: Infinity }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#0052FF]/10 blur-[150px] rounded-full pointer-events-none"
+      {/* Static Ambient Glow */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[800px] h-[300px] md:h-[800px] bg-[#0052FF]/10 blur-[60px] md:blur-[150px] rounded-full pointer-events-none"
+        style={{ transform: 'translate3d(-50%, -50%, 0)' }}
       />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-20 space-y-4">
-          <span className="text-[#0052FF] uppercase tracking-[0.8em] text-[10px] font-black">
+        <div className="text-center mb-16 md:mb-20 space-y-4">
+          <span className="text-[#0052FF] uppercase tracking-[0.5em] md:tracking-[0.8em] text-[9px] md:text-[10px] font-black block">
             The Olfactory Wardrobe
           </span>
-          <h2 className="text-5xl md:text-7xl font-serif text-[#F9FAFB] italic">
+          <h2 className="text-4xl md:text-7xl font-serif text-[#F9FAFB] italic leading-tight">
             Pick your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F9FAFB] to-[#0052FF]">Essence.</span>
           </h2>
         </div>
 
-        {/* 3. STABLE GRID SYSTEM */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {scents.map((scent, idx) => (
-            <motion.div
+            <div
               key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: idx * 0.15 }}
-              className="group relative flex flex-col items-center bg-white/[0.02] border border-white/5 p-8 backdrop-blur-sm rounded-sm transition-all duration-500"
+              className="group relative flex flex-col items-center bg-white/[0.03] border border-white/5 p-6 md:p-8 backdrop-blur-sm rounded-sm transition-colors duration-500"
             >
-              {/* Family Label */}
-              <p className="text-[#0052FF] uppercase tracking-[0.4em] text-[9px] mb-2 font-black">
+              <p className="text-[#0052FF] uppercase tracking-[0.3em] text-[8px] md:text-[9px] mb-2 font-black">
                 {scent.family}
               </p>
 
-              {/* Title */}
-              <h3 className="text-2xl font-serif text-[#F9FAFB] mb-8 text-center group-hover:italic transition-all">
+              <h3 className="text-xl md:text-2xl font-serif text-[#F9FAFB] mb-6 md:mb-8 text-center group-hover:italic transition-all duration-300">
                 {scent.name}
               </h3>
 
-              {/* Bottle Visual with 3D Hover */}
-              <div className="relative w-full aspect-[4/5] mb-8 overflow-hidden">
-                <motion.img
-                  whileHover={{ scale: 1.1, rotate: -2 }}
+              <div className="relative w-full aspect-[4/5] mb-6 md:mb-8 overflow-hidden rounded-sm bg-[#030610]">
+                <img
                   src={scent.img}
                   alt={scent.name}
-                  
-                  className="w-full h-full object-cover transition-all duration-700 rounded-sm"
+                  loading="lazy"
+                  className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 md:group-hover:scale-105 transition-all duration-700"
                 />
                 
-                {/* Overlay Tag */}
-                <div className="absolute bottom-4 left-4 right-4 bg-[#0A0F1E]/80 backdrop-blur-md p-3 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                <div className="absolute bottom-0 left-0 right-0 bg-[#0A0F1E]/90 backdrop-blur-md p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-400 ease-out">
                   <p className="text-[#F9FAFB] text-[8px] uppercase tracking-widest text-center italic">
                     {scent.tag}
                   </p>
                 </div>
               </div>
 
-              {/* Interaction Link */}
-              <motion.button
-                whileHover={{ letterSpacing: "0.5em" }}
-                className="text-[#F9FAFB]/40 uppercase text-[9px] tracking-[0.3em] font-black border-b border-transparent hover:border-[#0052FF] hover:text-[#0052FF] pb-2 transition-all duration-300"
+              <button
+                className="text-[#F9FAFB]/50 uppercase text-[9px] tracking-[0.2em] font-black border-b border-white/10 hover:border-[#0052FF] hover:text-[#0052FF] pb-1 transition-all duration-300 active:scale-95"
               >
                 Explore Scent
-              </motion.button>
-            </motion.div>
+              </button>
+            </div>
           ))}
         </div>
       </div>
 
-      {/* Side Brand Accent */}
-      <div className="absolute left-10 bottom-10 hidden lg:block">
-        <span className="text-[#F9FAFB]/10 text-[10px] uppercase tracking-[1em] [writing-mode:vertical-lr] font-black">
+      <div className="absolute left-6 bottom-10 hidden xl:block">
+        <span className="text-[#F9FAFB]/5 text-[9px] uppercase tracking-[1em] [writing-mode:vertical-lr] font-black">
           Signature Collection No. 1
         </span>
       </div>
