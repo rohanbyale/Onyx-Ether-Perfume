@@ -55,7 +55,7 @@ const HeritageSection = () => {
             >
               {/* Reliable Direct Video Link */}
               <source 
-                src="https://cdn.pixabay.com/video/2021/04/12/70860-536967732_large.mp4" 
+                src="https://www.pexels.com/download/video/8447696/" 
                 type="video/mp4" 
               />
             </video>
@@ -145,3 +145,4 @@ const HeritageSection = () => {
 };
 
 export default HeritageSection;
+
