@@ -25,7 +25,7 @@ const CraftsmanshipStory = () => {
     ["grayscale(100%) brightness(0.4) blur(4px)", "grayscale(0%) brightness(0.7) blur(0px)"]
   );
 
-  // 3. PARALLAX logic (Kept original logic)
+
   const titleY = useTransform(smoothProgress, [0, 1], [150, -150]);
   const descY = useTransform(smoothProgress, [0, 1], [250, -250]);
   const bgScale = useTransform(smoothProgress, [0, 1], [1.2, 1]);
