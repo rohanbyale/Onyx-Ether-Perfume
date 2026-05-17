@@ -81,7 +81,7 @@ const CraftsmanshipStory = () => {
             </h2>
           </motion.div>
 
-          {/* Description Box - Enhanced with Glassmorphism */}
+     
           <motion.div 
             style={{ y: descY }}
             className="col-span-12 lg:col-start-9 lg:col-span-4 mt-12 lg:mt-64"
