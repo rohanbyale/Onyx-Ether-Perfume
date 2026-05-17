@@ -19,7 +19,6 @@ const CraftsmanshipStory = () => {
     ["inset(20% 30% 20% 30%)", "inset(0% 0% 0% 0%)"]
   );
 
-  // 2. STAGGERED FILTER: Shifted to a deeper sapphire-tinted grayscale
   const filter = useTransform(
     smoothProgress,
     [0.3, 0.6],
