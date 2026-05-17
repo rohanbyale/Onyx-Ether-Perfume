@@ -101,7 +101,7 @@ const CraftsmanshipStory = () => {
           </motion.div>
         </div>
 
-        {/* Side Rotating Badge - Whitish & Refined */}
+     
         <div className="absolute right-12 bottom-12 z-20 pointer-events-none">
             <motion.div 
               animate={{ rotate: 360 }}
