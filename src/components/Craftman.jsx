@@ -57,7 +57,7 @@ const CraftsmanshipStory = () => {
         {/* Content Overlay */}
         <div className="container mx-auto px-8 md:px-16 grid grid-cols-12 relative z-10 w-full items-center">
           
-          {/* Heading with Motion */}
+      
           <motion.div 
             style={{ y: titleY }}
             className="col-span-12 lg:col-span-7 space-y-8"
