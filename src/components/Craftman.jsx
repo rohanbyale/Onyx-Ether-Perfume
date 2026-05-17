@@ -87,7 +87,7 @@ const CraftsmanshipStory = () => {
             className="col-span-12 lg:col-start-9 lg:col-span-4 mt-12 lg:mt-64"
           >
             <div className="relative group">
-              {/* Decorative Corner Accents */}
+           
               <div className="absolute -top-2 -left-2 w-10 h-10 border-t border-l border-[#0052FF]/50" />
               
               <div className="bg-[#F9FAFB]/5 backdrop-blur-2xl p-10 border border-white/10 shadow-2xl">
