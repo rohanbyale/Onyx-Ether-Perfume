@@ -9,10 +9,10 @@ const CraftsmanshipStory = () => {
     offset: ["start start", "end end"]
   });
 
-  // Smooth spring for that "weighted" luxury feel
+  
   const smoothProgress = useSpring(scrollYProgress, { stiffness: 50, damping: 25 });
 
-  // 1. YOUR ORIGINAL CLIP PATH (Kept exactly as requested)
+
   const clipPath = useTransform(
     smoothProgress,
     [0, 0.45],
