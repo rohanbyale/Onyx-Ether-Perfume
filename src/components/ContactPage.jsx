@@ -6,12 +6,12 @@ const ContactPage = () => {
 
   return (
     <section className="min-h-screen bg-[#fcfcfc] pt-32 pb-20 px-6 lg:px-16 relative overflow-hidden">
-      {/* Background Texture Overlay */}
+    
       <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-multiply bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 relative z-10">
         
-        {/* LEFT: THE INQUIRY FORM */}
+    
         <div className="lg:col-span-7">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
