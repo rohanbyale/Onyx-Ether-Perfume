@@ -50,7 +50,7 @@ const CraftsmanshipStory = () => {
               <source src="/video.mp4" type="video/mp4" />
             </video>
           </motion.div>
-          {/* Sapphire Overlay Wash */}
+    
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0F1E]/80 via-transparent to-[#0A0F1E]" />
         </motion.div>
 
