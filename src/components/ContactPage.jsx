@@ -70,7 +70,7 @@ const ContactPage = () => {
           </form>
         </div>
 
-        {/* RIGHT: ATMOSPHERE & DETAILS */}
+    
         <div className="lg:col-span-5">
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
