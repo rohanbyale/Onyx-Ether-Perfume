@@ -9,7 +9,7 @@ const CollectionHero = () => {
   return (
     <section className="relative h-screen w-full bg-[#030610] flex items-center justify-center overflow-hidden">
       
-      {/* 1. LAYERED DEPTH: HUGE BACKGROUND TEXT */}
+   
       <motion.div 
         style={{ y: y1 }}
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0"
