@@ -54,7 +54,7 @@ const CollectionHero = () => {
           </motion.div>
         </motion.div>
 
-        {/* 3. TYPOGRAPHY OVERLAY */}
+   
         <div className="absolute inset-0 flex flex-col items-center justify-center z-20 pointer-events-none">
           <motion.h1 
             initial={{ opacity: 0, letterSpacing: "1em" }}
