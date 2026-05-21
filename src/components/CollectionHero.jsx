@@ -19,7 +19,7 @@ const CollectionHero = () => {
         </h2>
       </motion.div>
 
-      {/* 2. THE CENTERPIECE: FLOATING BOTTLE ART */}
+
       <div className="relative z-10 w-full max-w-6xl px-6 flex flex-col items-center">
         
         <motion.div
