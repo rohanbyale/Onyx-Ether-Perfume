@@ -78,7 +78,7 @@ const CollectionHero = () => {
         </div>
       </div>
 
-      {/* 4. MOUSE INDICATOR */}
+   
       <motion.div 
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
