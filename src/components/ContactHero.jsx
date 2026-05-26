@@ -67,7 +67,7 @@ const ContactHero = () => {
             </motion.div>
           </div>
 
-          {/* RIGHT COLUMN: The Interactive Terminal (Form) */}
+       
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
