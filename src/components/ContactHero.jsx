@@ -74,7 +74,7 @@ const ContactHero = () => {
             transition={{ delay: 0.3 }}
             className="bg-white/[0.02] border border-white/10 p-10 md:p-16 backdrop-blur-xl rounded-sm relative group"
           >
-            {/* Form Scanner Effect */}
+            
             <div className="absolute top-0 left-0 w-full h-1 bg-[#0052FF]/20 animate-scan pointer-events-none" />
             
             <form className="space-y-10">
