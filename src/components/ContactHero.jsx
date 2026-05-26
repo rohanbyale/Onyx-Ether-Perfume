@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const ContactHero = () => {
   return (
     <section className="relative min-h-screen w-full bg-[#030610] flex items-center pt-32 pb-20 px-8 overflow-hidden">
-      {/* Background Decorative Elements */}
+
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#0052FF]/5 blur-[150px] rounded-full pointer-events-none" />
       <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-[#0052FF]/10 blur-[120px] rounded-full pointer-events-none" />
       
