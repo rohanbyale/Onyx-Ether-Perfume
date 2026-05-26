@@ -8,7 +8,7 @@ const ContactHero = () => {
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#0052FF]/5 blur-[150px] rounded-full pointer-events-none" />
       <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-[#0052FF]/10 blur-[120px] rounded-full pointer-events-none" />
       
-      {/* Grid Pattern Overlay */}
+
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
            style={{ backgroundImage: `linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)`, size: '50px 50px', backgroundSize: '40px 40px' }} 
       />
